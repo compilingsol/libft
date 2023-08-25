@@ -6,7 +6,7 @@
 /*   By: maria-sg <maria-sg@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/17 17:29:21 by maria-sg          #+#    #+#             */
-/*   Updated: 2023/08/17 17:29:24 by maria-sg         ###   ########.fr       */
+/*   Updated: 2023/08/25 14:23:06 by maria-sg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,8 @@ char	*ft_strdup(const char *s1)
 {
 	char	*dest;
 	int		i;
-	int		len;
 
-	len = 0;
-	while (s1[len] != '\0')
-		len++;
-	dest = (char *)malloc(sizeof(char) * (len + 1));
+	dest = (char *)malloc(sizeof(char) * (ft_strlen(s1)));
 	if (dest == NULL)
 		return (NULL);
 	i = 0;
@@ -41,8 +37,8 @@ char	*ft_strdup(const char *s1)
 
 //     if (duplicate != NULL)
 //     {
-//         printf("Original string: %s\n", src);
-//         printf("Duplicated string: %s\n", duplicate);
+//         printf("Original string: %p\n", src);
+//         printf("Duplicated string: %p\n", duplicate);
 //         free(duplicate);
 //     }
 //     else

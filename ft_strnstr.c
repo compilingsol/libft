@@ -6,7 +6,7 @@
 /*   By: maria-sg <maria-sg@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/17 17:30:06 by maria-sg          #+#    #+#             */
-/*   Updated: 2023/08/24 14:12:00 by maria-sg         ###   ########.fr       */
+/*   Updated: 2023/08/25 14:30:19 by maria-sg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-    size_t	i;
+	size_t	i;
 	size_t	j;
 
 	if (!*little)
@@ -30,7 +30,6 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		}
 		if (!little[j])
 			return ((char *)&big[i - j]);
-		//i = (i - j) + 1;
 		i++;
 	}
 	return (NULL);

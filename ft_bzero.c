@@ -6,7 +6,7 @@
 /*   By: maria-sg <maria-sg@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 15:37:52 by maria-sg          #+#    #+#             */
-/*   Updated: 2023/08/16 15:00:01 by maria-sg         ###   ########.fr       */
+/*   Updated: 2023/08/25 14:03:03 by maria-sg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,11 @@ void	ft_bzero(void *s, size_t n)
 // {
 //     char str[50] = "Hola, como estas hoy?";
 //     printf("\nBefore bzero(): %s\n", str);
-  
+
 //     bzero(str + 2, 2*sizeof(char));
-  
+
 //     printf("After bzero():  %s\n", str);
-	
+
 // 	ft_bzero(str + 2, 2*sizeof(char));
 // 	printf("After ft_bzero():  %s\n", str);
 //     return 0;

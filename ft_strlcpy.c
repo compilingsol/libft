@@ -6,7 +6,7 @@
 /*   By: maria-sg <maria-sg@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/16 17:39:19 by maria-sg          #+#    #+#             */
-/*   Updated: 2023/08/17 18:02:44 by maria-sg         ###   ########.fr       */
+/*   Updated: 2023/08/25 14:29:07 by maria-sg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,4 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		dst[len_src - 1] = '\0';
 	}
 	return (len_src);
-	
 }

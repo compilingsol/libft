@@ -6,7 +6,7 @@
 /*   By: maria-sg <maria-sg@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/24 15:14:13 by maria-sg          #+#    #+#             */
-/*   Updated: 2023/08/24 16:01:28 by maria-sg         ###   ########.fr       */
+/*   Updated: 2023/08/25 14:29:43 by maria-sg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	size_t	i;
 	char	*str;
-	
+
+	i = 0;
 	if (!s)
 		return (NULL);
 	str = (char *)malloc(sizeof(char) * (ft_strlen(s)) + 1);
@@ -32,6 +33,6 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		str[i] = f(i, s[i]);
 		i++;
 	}
-	str[i] = 0
+	str[i] = 0;
 	return (str);
 }

@@ -6,7 +6,7 @@
 /*   By: maria-sg <maria-sg@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/18 18:28:10 by maria-sg          #+#    #+#             */
-/*   Updated: 2023/08/22 15:27:00 by maria-sg         ###   ########.fr       */
+/*   Updated: 2023/08/25 14:30:47 by maria-sg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	size_t i;
-	
+	size_t	i;
+
 	i = ft_strlen(s);
 	while (*s)
 	{
@@ -29,6 +29,6 @@ char	*ft_strrchr(const char *s, int c)
 // int main()
 // {
 // 	char *str = "Hola como estas";
-// 	printf("strrchr is %p\n", strrchr(str, 'c'));
-// 	printf("ft_strrchr is %s\n", ft_strrchr(str, 'c'));
+// 	printf("strrchr is %s\n", strrchr(str, 'o'));
+// 	printf("ft_strrchr is %s\n", ft_strrchr(str, 'o'));
 // }

@@ -6,16 +6,16 @@
 /*   By: maria-sg <maria-sg@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/17 17:29:05 by maria-sg          #+#    #+#             */
-/*   Updated: 2023/08/17 17:29:07 by maria-sg         ###   ########.fr       */
+/*   Updated: 2023/08/25 14:13:11 by maria-sg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
-    if (c >= 32 && c <= 126)
-			return (1);
+	if (c >= 32 && c <= 126)
+		return (1);
 	return (0);
 }
 

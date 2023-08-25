@@ -6,13 +6,13 @@
 /*   By: maria-sg <maria-sg@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 14:09:09 by maria-sg          #+#    #+#             */
-/*   Updated: 2023/08/22 15:23:21 by maria-sg         ###   ########.fr       */
+/*   Updated: 2023/08/25 14:24:22 by maria-sg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
 	if (n == -2147483648)
 	{
