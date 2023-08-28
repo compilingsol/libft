@@ -6,7 +6,7 @@
 /*   By: maria-sg <maria-sg@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/17 17:30:14 by maria-sg          #+#    #+#             */
-/*   Updated: 2023/08/25 14:35:33 by maria-sg         ###   ########.fr       */
+/*   Updated: 2023/08/28 18:18:35 by maria-sg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ maximum size ’len’.
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*newstr;
-	int		i;
+	size_t	i;
 	size_t	j;
 
 	newstr = (char *)malloc(len + 1);
