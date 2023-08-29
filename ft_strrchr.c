@@ -17,25 +17,13 @@ char	*ft_strrchr(const char *s, int c)
 	size_t	i;
 
 	i = ft_strlen(s);
-	while (*s)
+	if (c == '\0')
+		return ((char *)&s[i]);
+	while (i > 0)
 	{
+		i--;
 		if (s[i] == (char)c)
 			return ((char *)&s[i]);
-		i--;
 	}
 	return (NULL);
-	// while (s[i] != (char)c)
-	// {
-	// 	if (s[i] == '\0')
-	// 		return (NULL);
-	// 	i--;
-	// }
-	// return ((char *)&s[i]);
 }
-
-// int main()
-// {
-// 	char *str = "Hola como estas";
-// 	printf("strrchr is %s\n", strrchr(str, 'o'));
-// 	printf("ft_strrchr is %s\n", ft_strrchr(str, 'o'));
-// }
