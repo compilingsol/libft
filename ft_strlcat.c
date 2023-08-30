@@ -6,31 +6,43 @@
 /*   By: maria-sg <maria-sg@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/16 15:46:21 by maria-sg          #+#    #+#             */
-/*   Updated: 2023/08/28 21:12:59 by maria-sg         ###   ########.fr       */
+/*   Updated: 2023/08/30 19:06:58 by maria-sg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char * restrict dst, const char * restrict src, size_t dstsize)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	size_t	len_dst;
-	size_t	len_src;
+	size_t	lendst;
+	size_t	lensrc;
 	size_t	i;
 
-	if (dstsize == 0)
-		return (ft_strlen(dst));
-	len_src = ft_strlen(src);
+	lendst = ft_strlen(dst);
+	lensrc = ft_strlen(src);
+	if (size <= lendst)
+		return (lensrc + size);
 	i = 0;
-	while (dst[i] && i < dstsize)
-		i++;
-	len_dst = i;
-	while (src[i - len_dst] && i < dstsize - 1)
+	while (i < size - lendst - 1 && src[i])
 	{
-		dst[i] = src[i - len_dst];
+		dst[lendst + i] = src[i];
 		i++;
 	}
-	if (len_dst < dstsize)
-		dst[i] = '\0';
-	return (len_dst + len_src);
+	dst[lendst + i] = '\0';
+	return lendst + lensrc;
+	// if (size == 0)
+	// 	return (ft_strlen(dst));
+	// len_src = ft_strlen(src);
+	// i = 0;
+	// while (dst[i] && i < size)
+	// 	i++;
+	// len_dst = i;
+	// while (src[i - len_dst] && i < size - 1)
+	// {
+	// 	dst[i] = src[i - len_dst];
+	// 	i++;
+	// }
+	// if (len_dst < size)
+	// 	dst[i] = '\0';
+	// return (len_dst + len_src);
 }

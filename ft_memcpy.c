@@ -6,7 +6,7 @@
 /*   By: maria-sg <maria-sg@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 18:25:40 by maria-sg          #+#    #+#             */
-/*   Updated: 2023/08/25 14:14:15 by maria-sg         ###   ########.fr       */
+/*   Updated: 2023/08/30 18:37:26 by maria-sg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,20 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	size_t i;
-	unsigned char *s;
-	unsigned char *d;
+	char	*s;
+	char	*d;
 
-	s = (unsigned char *)src;
-	d = (unsigned char *)dest;
-	i = 0;
+	s = (char *)src;
+	d = (char *)dest;
+	if (!dest && !src)
+		return (NULL);
 	while (n > 0)
 	{
-		d[i] = s[i];
-		i++;
+		*d++ = *s++;
 		n--;
 	}
-	return (d);
+	return (dest);
 }
-
 
 // int main()
 // {

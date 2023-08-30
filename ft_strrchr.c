@@ -6,7 +6,7 @@
 /*   By: maria-sg <maria-sg@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/18 18:28:10 by maria-sg          #+#    #+#             */
-/*   Updated: 2023/08/28 21:16:53 by maria-sg         ###   ########.fr       */
+/*   Updated: 2023/08/30 18:16:46 by maria-sg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,10 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
+
+// int main()
+// {
+// 	char *str = "Hola como estas";
+// 	printf("strrchr is %s\n", strrchr(str, 'o'));
+// 	printf("ft_strrchr is %s\n", ft_strrchr(str, 'o'));
+// }

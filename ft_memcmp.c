@@ -6,7 +6,7 @@
 /*   By: maria-sg <maria-sg@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/16 15:05:09 by maria-sg          #+#    #+#             */
-/*   Updated: 2023/08/16 15:47:27 by maria-sg         ###   ########.fr       */
+/*   Updated: 2023/08/30 18:51:50 by maria-sg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,16 +19,15 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 
 	src1 = (unsigned char *)s1;
 	src2 = (unsigned char *)s2;
-	while (n && *src1 && (*src1 == *src2))
+	while (n > 0)
 	{
+		if (*src1 != *src2)
+			return (*src1 - *src2);
 		src1++;
 		src2++;
 		n--;
 	}
-	if (n == 0)
-		return (0);
-	else
-		return (*src1 - *src2);
+	return (0);
 }
 
 // int main()

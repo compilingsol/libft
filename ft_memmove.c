@@ -6,7 +6,7 @@
 /*   By: maria-sg <maria-sg@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 19:43:55 by maria-sg          #+#    #+#             */
-/*   Updated: 2023/08/25 14:14:38 by maria-sg         ###   ########.fr       */
+/*   Updated: 2023/08/30 18:38:48 by maria-sg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	i = 0;
 	s = (unsigned char *)src;
 	d = (unsigned char *)dest;
+	if (!dest && !src)
+		return (NULL);
 	if (d > s)
 	{
 		while (n-- > 0)

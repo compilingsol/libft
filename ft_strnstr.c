@@ -6,7 +6,7 @@
 /*   By: maria-sg <maria-sg@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/17 17:30:06 by maria-sg          #+#    #+#             */
-/*   Updated: 2023/08/25 14:30:19 by maria-sg         ###   ########.fr       */
+/*   Updated: 2023/08/30 19:14:40 by maria-sg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	i;
 	size_t	j;
 
-	if (!*little)
+	if (!little)
 		return ((char *)big);
 	i = 0;
 	while (big[i])
