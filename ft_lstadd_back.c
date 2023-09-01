@@ -1,35 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maria-sg <maria-sg@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/16 15:46:21 by maria-sg          #+#    #+#             */
-/*   Updated: 2023/09/01 14:28:38 by maria-sg         ###   ########.fr       */
+/*   Created: 2023/08/31 16:58:41 by maria-sg          #+#    #+#             */
+/*   Updated: 2023/08/31 18:23:01 by maria-sg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	size_t	lendst;
-	size_t	lensrc;
-	size_t	i;
+	t_list	*last;
 
-	if (size == 0)
-		return (0);
-	lendst = ft_strlen(dst);
-	lensrc = ft_strlen(src);
-	if (size <= lendst)
-		return (lensrc + size);
-	i = 0;
-	while (i < size - lendst - 1 && src[i])
+	if (!*lst)
 	{
-		dst[lendst + i] = src[i];
-		i++;
+		*lst = new;
+		return ;
 	}
-	dst[lendst + i] = '\0';
-	return (lendst + lensrc);
+	last = ft_lstlast(*lst);
+	last->next = new;
 }

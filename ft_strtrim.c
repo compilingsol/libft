@@ -6,7 +6,7 @@
 /*   By: maria-sg <maria-sg@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/21 15:36:24 by maria-sg          #+#    #+#             */
-/*   Updated: 2023/08/28 18:19:50 by maria-sg         ###   ########.fr       */
+/*   Updated: 2023/09/01 14:17:19 by maria-sg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ from the beginning and the end of the string.
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*newstr;
-	size_t  i;
-	
+	size_t	i;
+
 	if (!s1 || !set)
 		return (NULL);
 	while (*s1 && ft_strchr(set, *s1))
@@ -33,7 +33,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 	newstr = ft_substr(s1, 0, i + 1);
 	return (newstr);
 }
-
 
 // int main()
 // {

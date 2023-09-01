@@ -6,7 +6,7 @@
 /*   By: maria-sg <maria-sg@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/17 17:31:11 by maria-sg          #+#    #+#             */
-/*   Updated: 2023/08/28 19:27:37 by maria-sg         ###   ########.fr       */
+/*   Updated: 2023/09/01 14:15:12 by maria-sg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,6 @@ char	*ft_strchr(const char *s, int c)
 	size_t	i;
 
 	i = 0;
-	// if (!s)
-	// 	return (NULL);
-	// while (s[i] != '\0')
-	// {
-	// 	if (s[i] == (char)c)
-	// 		return ((char *)&s[i]);
-	// 	i++;
-	// }
-	// return (NULL);
 	while (s[i] != (char)c)
 	{
 		if (s[i] == '\0')
@@ -34,7 +25,6 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return ((char *)&s[i]);
 }
-
 
 /*
 The  strchr() function returns a pointer to the first occurrence of
