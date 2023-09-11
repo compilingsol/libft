@@ -6,7 +6,7 @@
 /*   By: maria-sg <maria-sg@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/16 15:46:21 by maria-sg          #+#    #+#             */
-/*   Updated: 2023/09/01 14:28:38 by maria-sg         ###   ########.fr       */
+/*   Updated: 2023/09/11 17:37:37 by maria-sg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t	lensrc;
 	size_t	i;
 
-	if (size == 0)
+	if (dst == NULL || src == NULL)
 		return (0);
 	lendst = ft_strlen(dst);
 	lensrc = ft_strlen(src);
