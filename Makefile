@@ -34,7 +34,14 @@ SOURCES = \
 	ft_substr.c \
 	ft_tolower.c \
 	ft_toupper.c \
-	
+	ft_printchar.c \
+	ft_printdigit.c \
+	ft_printf.c \
+	ft_printpointer.c \
+	ft_printstr.c \
+	get_next_line.c \
+	get_next_line_utils.c \
+
 BONUS_SOURCES = \
 	ft_lstnew.c \
 	ft_lstadd_front.c \
